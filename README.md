@@ -17,5 +17,10 @@ Simply run:
 
 To use it:
 
-    $ fetch-gitignore --help
+    $ fetch-gitignore <languagge>
+
+This will copy the gitignore template for the specified <language>
+from github to a local .gitignore file.
+
+
 

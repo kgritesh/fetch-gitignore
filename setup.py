@@ -3,7 +3,7 @@ a simple script to generate gitignore file for your project using giththub/gitig
 """
 from setuptools import find_packages, setup
 
-dependencies = ['click']
+dependencies = ['click', 'requests', 'pygithub3']
 
 setup(
     name='fetch-gitignore',
