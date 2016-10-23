@@ -17,7 +17,7 @@ def find_gitignore_url(client, commit, lang):
     for item in tree.tree:
         if item['type'] == 'blob':
             filename, ext = os.path.splitext(os.path.basename(item['path']))
-            if lang.lower() in filename.lower():
+            if lang.lower() == filename.lower():
                 return 'https://raw.githubusercontent.com/github/gitignore/master/{}'.format(item['path'])
 
     return None
